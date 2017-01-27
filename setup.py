@@ -14,6 +14,8 @@ setup(
     author='Michal Raska',
     author_email='michal.raska@gmail.com',
     description='',
-
     install_requires=['up', 'twisted', 'pyyaml'],
+    package_data={
+        'mission_control_cog': ['mission_control_cog/registered_modules.yml']
+    }
 )
