@@ -55,6 +55,9 @@ class MissionControlProvider(BaseStartedModule):
         else:
             self.logger.debug("Disconnected from Mission Control")
 
+    def load(self):
+        return True
+
 
 class MissionControlCommProtocol(LineReceiver):
     def __init__(self, callbacks):

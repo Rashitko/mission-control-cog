@@ -1,4 +1,5 @@
 .idea
 build
 mission_control_cog.egg-info
-**/__pycache__dist
+**/__pycache__
+dist
