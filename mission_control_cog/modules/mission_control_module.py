@@ -6,14 +6,14 @@ from twisted.internet import reactor
 from twisted.internet.endpoints import TCP4ClientEndpoint
 from twisted.internet.protocol import connectionDone, ReconnectingClientFactory
 from twisted.protocols.basic import LineReceiver
-from up.base_started_module import BaseStartedModule
 from up.commands.command import BaseCommand
+from up.modules.base_mission_control_provider import BaseMissionControlProvider
 from up.utils.up_logger import UpLogger
 
 from mission_control_cog.registrar import Registrar
 
 
-class MissionControlProvider(BaseStartedModule):
+class MissionControlProvider(BaseMissionControlProvider):
     PROXY_ADDRESS = 'raspilot.projekty.ms.mff.cuni.cz'
 
     def _execute_initialization(self):
