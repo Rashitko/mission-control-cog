@@ -39,7 +39,7 @@ class MissionControlProvider(BaseMissionControlProvider):
     def _execute_stop(self):
         pass
 
-    def send_message(self, data):
+    def _transmit_telemetry(self, data):
         if self.__protocol.transport:
             reactor.callFromThread(self.__protocol.sendLine, data)
 
