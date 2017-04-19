@@ -16,6 +16,6 @@ setup(
     description='',
     install_requires=['up', 'twisted', 'pyyaml'],
     package_data={
-        'mission_control_cog': ['mission_control_cog/registered_modules.yml']
+        'mission_control_cog': ['registered_modules.yml']
     }
 )
